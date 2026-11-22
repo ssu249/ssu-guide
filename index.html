@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSU</title>
+<meta name="theme-color" content="#8f5f0f">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Cairo:wght@400;600;700;800&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Cairo:wght@400;600;700;800&amp;display=swap"></noscript>
+<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M12 2.6 1.9 11.4a1 1 0 0 0 .7 1.7H4V21h6v-5.6h4V21h6v-7.9h1.4a1 1 0 0 0 .7-1.7L18.5 7V3.6h-2.4v1.3z"></path></symbol>
+<symbol id="i-guide" viewBox="0 0 24 24"><rect x="3" y="3" width="5.2" height="13.4" rx="1.1"></rect><rect x="9.6" y="5.2" width="5" height="11.2" rx="1.1"></rect><path d="m16 5.6 4.6 1.1a1.1 1.1 0 0 1 .8 1.3l-2.6 8.5-5-1.3z"></path><rect x="2" y="18.2" width="20" height="3" rx="1.5"></rect></symbol>
+<symbol id="i-colleges" viewBox="0 0 24 24"><path d="M12 2 2.4 7.3v2.2h19.2V7.3z"></path><rect x="4.2" y="11" width="2.7" height="7"></rect><rect x="8.5" y="11" width="2.7" height="7"></rect><rect x="12.8" y="11" width="2.7" height="7"></rect><rect x="17.1" y="11" width="2.7" height="7"></rect><rect x="2.4" y="19.2" width="19.2" height="2.4" rx="1"></rect></symbol>
+<symbol id="i-services" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"></rect><rect x="13" y="3.5" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"></rect><rect x="3.5" y="13" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"></rect><rect x="13" y="13" width="7.5" height="7.5" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"></rect></symbol>
+<symbol id="i-faq" viewBox="0 0 24 24"><circle cx="10.2" cy="10.2" r="7.2" fill="none" stroke="currentColor" stroke-width="2.5"></circle><path d="m15.6 15.6 5.4 5.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path><path d="M8.2 8.4a2.2 2.2 0 1 1 3.2 2c-.8.4-1.2.9-1.2 1.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path><circle cx="10.2" cy="14.5" r="1.2"></circle></symbol>
+<symbol id="i-register" viewBox="0 0 24 24"><circle cx="12" cy="7.6" r="4.3"></circle><path d="M3.4 21.4c0-4.7 3.8-7.6 8.6-7.6s8.6 2.9 8.6 7.6z"></path></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.4" cy="10.4" r="6.6" fill="none" stroke="currentColor" stroke-width="2.6"></circle><path d="m15.4 15.4 5.6 5.6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path></symbol>
+</defs></svg>
+<div id="prog"></div>
+<header><div class="wrap bar">
+ <button class="brand" data-go="home"><span class="logo" id="logoBox" role="img" aria-label="SSU"></span><span class="bt"><span id="brandText">SSU</span><small data-t="hero.eyebrow">رابطة الطلاب السودانيين — جامعة قناة السويس</small></span></button>
+ <nav id="nav">
+  <button data-go="home" class="on"><svg class="i" aria-hidden="true"><use href="#i-home" xlink:href="#i-home"></use></svg><span data-t="nav.home">الرئيسية</span></button>
+  <button data-go="guide"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg><span data-t="nav.guide">الدليل</span></button>
+  <button data-go="colleges"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg><span data-t="nav.colleges">الكليات</span></button>
+  <button data-go="services"><svg class="i" aria-hidden="true"><use href="#i-services" xlink:href="#i-services"></use></svg><span data-t="nav.services">خدمات</span></button>
+  <button data-go="register"><svg class="i" aria-hidden="true"><use href="#i-register" xlink:href="#i-register"></use></svg><span data-t="nav.register">تسجيل الطلبة</span></button>
+ </nav>
+ <div class="tools"><button class="sbtn" id="sbtn" aria-label="Search"><svg class="i" aria-hidden="true"><use href="#i-search" xlink:href="#i-search"></use></svg></button><div class="langtoggle"><button id="btnAr" class="on">AR</button><button id="btnEn">EN</button></div></div>
+</div></header>
+
+<main>
+
+ <section id="page-home" class="page">
+  <div class="hero"><div class="wrap">
+   <span class="hero-mark" role="img" aria-label="SSU"></span>
+   <h1 data-t="hero.title">أهلاً بكم في رابطة الطلاب السودانيين</h1>
+   <p data-t="hero.text">نجمع الطلاب السودانيين بجامعة قناة السويس، وفي هذه المنصة كل ما تحتاجونه في مكان واحد.</p>
+   <div class="slogan" lang="ar" dir="rtl">قَنَاتُنا لبناء إنسان،<br>منها لبناء السودان.</div>
+  </div>
+  <svg class="hero-map" aria-hidden="true" focusable="false" viewBox="246 -2 168 136" preserveAspectRatio="xMidYMid meet"><g class="ha-land"><path class="ha-map" d="M283.4 4.0 L392.9 4.0 L394.8 13.0 L395.7 25.6 L398.4 32.8 L408.6 40.0 L402.1 44.5 L393.8 49.0 L390.2 60.7 L389.2 68.8 L388.3 73.3 L385.6 85.9 L378.2 92.2 L375.4 100.3 L371.8 103.9 L367.2 112.0 L365.3 115.6 L357.0 115.6 L347.8 113.8 L338.6 114.7 L327.6 115.6 L311.0 117.4 L297.2 116.5 L285.3 112.0 L277.9 113.8 L270.6 109.3 L266.9 99.4 L259.5 91.3 L256.8 85.9 L261.4 79.6 L259.5 73.3 L264.1 67.9 L270.6 60.7 L274.2 44.5 L274.2 26.5Z"/><path class="ha-nile" d="M352.4 61.6 L361.6 51.7 L365.3 40.9 L360.7 27.4 L351.5 31.0 L344.2 37.3 L337.7 31.9 L334.0 28.3 L336.8 18.4 L341.4 5.8 L342.3 4.0"/><path class="ha-nile faint" d="M352.4 61.6 L361.6 72.4 L362.6 80.5 L368.1 92.2 L370.8 100.3 L374.5 103.9"/><path class="ha-nile faint" d="M352.4 61.6 L352.4 73.3 L354.3 83.2 L355.2 95.8 L350.6 108.4 L345.1 114.7"/></g></svg>
+   <svg class="hero-art" aria-hidden="true" focusable="false" viewBox="0 0 1000 170" preserveAspectRatio="xMidYMax meet">
+   
+   <g class="ha-ship"><path d="M640 118H800L788 132H652Z"/><path class="faint" d="M655 118v-12h90v12M667 106v-10h60v10M700 118v-12M718 118v-12M683 106v-10M703 106v-10M762 118V90h24v28M768 90v-8h12v8M762 100h24"/></g>
+   <path class="ha-hz" d="M-700 132H1700"/>
+   <g class="ha-wave"><path d="M-700 144q50 -8 100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0"/><path class="faint" d="M-650 156q50 -8 100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0t100 0"/></g>
+  </svg>
+  <button class="scroll-cue" id="scrollCue" type="button"><span data-t="hero.scroll">تصفّح</span><i aria-hidden="true"></i></button>
+  </div>
+  <div class="wrap" id="resources">
+   <div class="navcards">
+    <div class="navcard" data-go="guide"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b data-t="nav.guide">الدليل</b><span class="desc" data-t="home.guideDesc">قروبات، لمحة عامة، أرقام مهمة</span></div>
+    <div class="navcard" data-go="colleges"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg></span><b data-t="nav.colleges">الكليات</b><span class="desc" data-t="home.collegesDesc">كليات الجامعة وأماكنها</span></div>
+    <div class="navcard" data-go="services"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-services" xlink:href="#i-services"></use></svg></span><b data-t="nav.services">خدمات</b><span class="desc" data-t="home.servicesDesc">أسئلة متكررة وأرقام مهمة</span></div>
+    <div class="navcard" data-go="register"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-register" xlink:href="#i-register"></use></svg></span><b data-t="nav.register">تسجيل الطلبة</b><span class="desc" data-t="home.registerDesc">سجّل بياناتك الآن</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="page-guide" class="page" hidden="">
+  <div class="page-hero"><div class="wrap">
+   <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><p class="eyebrow2" id="g-eyebrow">خطوة بخطوة نحو بداية أبسط</p>
+   <h1 data-t="nav.guide">الدليل</h1><p id="g-text">في هذا القسم حتلاقوا روابط القروبات الرسمية، ولمحة سريعة عن أهم الأماكن حول الجامعة.</p>
+  </div></div>
+  <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+  <div class="page-body wrap">
+   <div class="welcome-card"><p class="welcome-title" id="welcomeTitle">يا مرحب بيكم في دليلكم!</p><p class="welcome-text" id="welcomeText">عارفين إنو بداية أي مشوار جديد حيكون عندكم أسئلة كتيرة، وعشان كده جمعنا ليكم هنا أهم الحاجات الممكن تحتاجوها؛ من القروبات الرسمية والأماكن القريبة من الجامعة، لأرقام الخدمات والتواصل.
+
+نتمنى نكون سهّلنا عليكم الطريق وخليّنا المعلومة أقرب ليكم.
+أهلاً بيكم، ونتمنى ليكم تجربة موفقة💞</p></div>
+   <details class="acc" open="">
+    <summary><span data-t="guide.groups.title">قروبات مهمة</span><span class="ic">💬</span></summary>
+    <div class="in linklist" id="groupsList"><a target="_blank" rel="noopener" href="https://chat.whatsapp.com/KjGEfLA2R1Y4tSjP4fZgyn?s=sh&amp;p=a&amp;iam=2"><span class="gname"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>الجالية السودانية</span><span>&#8594;</span></a><a target="_blank" rel="noopener" href="https://chat.whatsapp.com/EH7MYAimIPe6iJ4U7muzKe?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4&amp;iam=2"><span class="gname"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>SSU</span><span>&#8594;</span></a><a target="_blank" rel="noopener" href="https://chat.whatsapp.com/K7IwjVWaaXHI2HYBt22bbQ?s=cl&amp;p=a&amp;iam=2"><span class="gname"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>أولياء الأمور</span><span>&#8594;</span></a><a target="_blank" rel="noopener" href="https://chat.whatsapp.com/DZvmFyKJWTy9Ae4G6XaHnh?s=cl&amp;p=i&amp;iam=2"><span class="gname"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>سكن الأولاد</span><span>&#8594;</span></a><a target="_blank" rel="noopener" href="https://chat.whatsapp.com/GldDuyKaiDV7Wg9V6aFwkr?s=cl&amp;p=a&amp;iam=2"><span class="gname"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg>نشاطات الأولاد</span><span>&#8594;</span></a></div>
+   </details>
+   <details class="acc" open="" data-c="1">
+    <summary><span data-t="guide.overview.title">لمحة عامة</span><span class="ic">✨</span></summary>
+    <div class="in" id="overviewText"><p class="p">أهلاً وسهلاً بيكم، ونرحب بيكم بين إخوتكم وزملائكم. حتلاقوا هنا لمحة عامة عن أهم الأماكن والمرافق القريبة من الجامعة، لتسهيل حياتكم اليومية.</p><details class="sub" open="" data-c="1"><summary><span>🏛️ كليات</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>📶 شركات الاتصالات</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>🏥 مستشفيات</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>💊 صيدليات</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>🏢 مستلزمات طبية</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>☕ كافيهات ومقاهي</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details><details class="sub" open="" data-c="1"><summary><span>🏟️ أندية ومراكز رياضية</span><span>›</span></summary><div class="in"><div class="places"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div></details></div>
+   </details>
+   <details class="acc" id="consultAcc" open="" data-c="1">
+    <summary><span data-t="nav.consult">الإستشارات</span><span class="ic">📞</span></summary>
+    <div class="in">
+     <p class="p" id="c-text">تواصلوا مباشرة مع المسؤولين في الرابطة لأي استفسار يخص السكن أو الإقامة أو الدراسة.</p>
+     <div class="people" id="consultList"><div class="person"><div class="avatar"><svg class="rico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"/></svg></div><b>محمد عبد الباقي</b><div class="role">رئيس الرابطة</div><div class="acts"><a class="btn wa numbtn" target="_blank" rel="noopener" href="https://wa.me/201015674189"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg><span dir="ltr">+20 10 15674189</span></a></div></div><div class="person"><div class="avatar"><svg class="rico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 13l2.2 2.2L15.5 11"/></svg></div><b>مي ياسر</b><div class="role">الأمين العام</div><div class="acts"><a class="btn wa numbtn" target="_blank" rel="noopener" href="https://wa.me/97471202240"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg><span dir="ltr">+974 7120 2240</span></a></div></div><div class="person"><div class="avatar"><svg class="rico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></div><b>زهرة آدم</b><div class="role">أكاديمية طب</div><div class="acts"><a class="btn wa numbtn" target="_blank" rel="noopener" href="https://wa.me/249112885711"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg><span dir="ltr">+249 11 288 5711</span></a></div></div><div class="person"><div class="avatar"><svg class="rico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5c-2.2 0-3.5 1.7-3.5 4 0 2 .8 3.2 1.4 5 .6 1.9.6 8 2.6 8 1.6 0 1.2-4.5 2.5-4.5h3c1.3 0 .9 4.5 2.5 4.5 2 0 2-6.1 2.6-8 .6-1.8 1.4-3 1.4-5 0-2.3-1.3-4-3.5-4-1.8 0-2.5 1-5 1s-3.2-1-5-1z"/></svg></div><b>بشير عثمان</b><div class="role">أكاديمية طب أسنان</div><div class="acts"><a class="btn wa numbtn" target="_blank" rel="noopener" href="https://wa.me/201093089463"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg><span dir="ltr">+20 109 308 9463</span></a></div></div><div class="person"><div class="avatar"><svg class="rico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><circle cx="12" cy="12" r="6.6"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg></div><b>مؤتمن</b><div class="role">أكاديمية هندسة</div><div class="acts"><a class="btn wa numbtn" target="_blank" rel="noopener" href="https://wa.me/201150764951"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.2L2 22l4.9-1.3A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3a8.2 8.2 0 1 1 6.8 3.7zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.7-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg><span dir="ltr">+20 115 076 4951</span></a></div></div></div>
+    </div>
+   </details>
+  </div>
+ </section>
+
+ <section id="page-colleges" class="page" hidden="">
+  <div class="page-hero"><div class="wrap">
+   <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg></span><h1 data-t="nav.colleges">الكليات</h1><p data-t="home.collegesDesc">كليات الجامعة وأماكنها</p>
+  </div></div>
+  <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+  <div class="page-body wrap"><div class="places" id="collegesList"><div class="place"><div class="ph">صورة قريباً</div><div class="pin"><span class="addnote">سيُضاف هذا المكان قريباً</span></div></div></div></div>
+ </section>
+
+<section id="page-med-system" class="page" hidden="">
+ <div class="page-hero"><div class="wrap">
+  <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg></span><h1>نظام الكلية</h1><p>كلية الطب البشري</p>
+ </div></div>
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="page-body wrap"><div class="sysnav">
+  <div class="navcard" data-go="med-curriculum" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b>المنهج التعليمي بكلية الطب</b><span class="desc">نظام الدراسة، الأنشطة التعليمية، ومتطلبات الجامعة والكلية</span></div>
+  <div class="navcard" data-go="med-rules" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-faq" xlink:href="#i-faq"></use></svg></span><b>قواعد الانتقال بين المستويات ونقاط الموديولات</b><span class="desc">قواعد النجاح والانتقال، نقاط كل موديول، وآلية التظلم</span></div>
+  <div class="navcard" data-go="med-sources" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b>دليل المصادر والقنوات المساعدة لدراسة الطب</b><span class="desc">قنوات ومصادر كل مادة، الكتب المرجعية وملاحظات مهمة</span></div>
+  <div class="navcard" data-go="med-study" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-faq" xlink:href="#i-faq"></use></svg></span><b>طرق المذاكرة</b><span class="desc">الكلية مقابل الثانوي: كيف تذاكر بذكاء</span></div>
+  <div class="navcard" data-go="med-exams" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-register" xlink:href="#i-register"></use></svg></span><b>نظام الامتحانات</b><span class="desc">البيزك: تقسيمة الدرجات، الـOSPE، الـMCQ والـMEQ</span></div>
+ </div></div>
+</section>
+
+<section id="page-med-curriculum" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="medPics" role="document" aria-label="المنهج التعليمي بكلية الطب"></div>
+</section>
+
+<section id="page-med-rules" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="rulesPics" role="document" aria-label="قواعد الانتقال بين المستويات ونقاط الموديولات"></div>
+</section>
+
+<section id="page-med-sources" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="sourcesPics" role="document" aria-label="دليل المصادر والقنوات المساعدة لدراسة الطب"></div>
+</section>
+
+<section id="page-med-study" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="studyPics" role="document" aria-label="طرق المذاكرة"></div>
+</section>
+
+<section id="page-med-exams" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="examsPics" role="document" aria-label="نظام الامتحانات"></div>
+</section>
+
+<section id="page-tel-numbers" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="telNumPics" role="document" aria-label="أرقام خدمة العملاء"></div>
+</section>
+
+<section id="page-hosp-file" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="hospPics" role="document" aria-label="مستشفيات الإسماعيلية"></div>
+</section>
+
+<section id="page-tel-branches" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="telBrPics" role="document" aria-label="دليل فروع شركات الاتصالات"></div>
+</section>
+
+<section id="page-dent-system" class="page" hidden="">
+ <div class="page-hero"><div class="wrap">
+  <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg></span><h1>نظام الكلية</h1><p>كلية طب الفم والأسنان</p>
+ </div></div>
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="page-body wrap"><div class="sysnav">
+  <div class="navcard" data-go="dent-guide" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b>دليل الطلاب – كلية طب الفم والأسنان</b><span class="desc">نظام الدراسة، التسجيل، التقييم، المعدل التراكمي ومتطلبات التخرج</span></div>
+ </div></div>
+</section>
+
+<section id="page-dent-guide" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="dentPics" role="document" aria-label="دليل الطلاب – كلية طب الفم والأسنان"></div>
+</section>
+
+ <section id="page-eng-system" class="page" hidden="">
+ <div class="page-hero"><div class="wrap">
+  <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-colleges" xlink:href="#i-colleges"></use></svg></span><h1>نظام الكلية</h1><p>كلية الهندسة</p>
+ </div></div>
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="page-body wrap"><div class="sysnav">
+  <div class="navcard" data-go="eng-college" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b>نظام الكلية</b><span class="desc">الأقسام العلمية والبرامج الدراسية وخرائط المقررات وسلاسل المتطلبات (لائحة 2021)</span></div>
+  <div class="navcard" data-go="eng-credit" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-faq" xlink:href="#i-faq"></use></svg></span><b>نظام الساعات المعتمدة</b><span class="desc">الساعات المعتمدة، المستويات والتخرج، التسجيل، الحضور والمعدل التراكمي</span></div>
+  <div class="navcard" data-go="eng-sources" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-register" xlink:href="#i-register"></use></svg></span><b>روابط المصادر والمواد الدراسية</b><span class="desc">روابط درايف للمستويات والأقسام العلمية</span></div>
+ </div></div>
+</section>
+
+<section id="page-eng-college" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="engCollegePics" role="document" aria-label="نظام كلية الهندسة – الأقسام والبرامج الدراسية"></div>
+</section>
+
+<section id="page-eng-credit" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="engCreditPics" role="document" aria-label="نظام الساعات المعتمدة – كلية الهندسة"></div>
+</section>
+
+<section id="page-eng-sources" class="page" hidden="">
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="mview" id="engSourcesPics" role="document" aria-label="روابط المصادر والمواد الدراسية – كلية الهندسة"></div>
+</section>
+
+<section id="page-services" class="page" hidden="">
+ <div class="page-hero"><div class="wrap">
+  <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-services" xlink:href="#i-services"></use></svg></span><h1 data-t="nav.services">خدمات</h1>
+ </div></div>
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="page-body wrap"><div class="sysnav">
+  <div class="navcard" data-go="faq" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-faq" xlink:href="#i-faq"></use></svg></span><b data-t="nav.faq">الأسئلة المتكررة</b><span class="desc" data-t="home.faqDesc">إجابات الأسئلة الشائعة</span></div>
+  <div class="navcard" data-go="numbers" role="button" tabindex="0"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><b data-t="guide.numbers.title">أرقام مهمة</b><span class="desc" data-t="services.numbersDesc">أرقام الخدمات والتواصل المهمة</span></div>
+ </div></div>
+</section>
+
+<section id="page-numbers" class="page" hidden="">
+ <div class="page-hero"><div class="wrap">
+  <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-guide" xlink:href="#i-guide"></use></svg></span><h1 data-t="guide.numbers.title">أرقام مهمة</h1>
+ </div></div>
+ <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+ <div class="page-body wrap">
+<div class="searchbox"><input id="numSearch" type="search" placeholder="ابحث بالاسم أو الخدمة أو الرقم"></div>
+     <div id="numbersList"><div class="numcat">سباك</div><div class="crow"><b>سباك</b><span class="soon">سيُضاف هذا المكان قريباً</span></div><div class="numcat">نجار</div><div class="crow"><b>نجار</b><span class="soon">سيُضاف هذا المكان قريباً</span></div><div class="numcat">صيانة أجهزة منزلية</div><div class="crow"><b>صيانة أجهزة منزلية</b><span class="soon">سيُضاف هذا المكان قريباً</span></div></div>
+ </div>
+</section>
+
+<section id="page-faq" class="page" hidden="">
+  <div class="page-hero"><div class="wrap">
+   <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-faq" xlink:href="#i-faq"></use></svg></span><p class="eyebrow2" id="f-eyebrow">كل حاجة محتاج تعرفها</p>
+   <h1 data-t="nav.faq">الأسئلة المتكررة</h1><p id="f-text">جمعنا ليكم إجابات الأسئلة اللي بتتكرر كتير من الطلاب الجدد، خاصة اللي متعلقة بالإقامة والأوراق الرسمية. لو سؤالك ما موجود، كلمونا من قسم الإستشارات.</p>
+  </div></div>
+  <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+  <div class="page-body wrap" id="faqList"><details class="acc faq rv" data-rv="1" style="--d: 60ms;"><summary><span>متطلبات الإقامة</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>صورتين من الجواز</li><li>صورتين من التأشيرة</li><li>صورتين من آخر دخول ليك في مصر</li><li>صورة فوتوغرافية</li><li>صورتين شهادة قيد</li><li>صورتين من الإيصال ال 5 دولار</li><li>صورتين للإقامة القديمة أو التأشيرة في حال الطلاب الجدد</li><li>إفادة سكن أو عقد إيجار موثق</li><li>رسوم الإقامة: 87</li></ul><p class="faqnote">⚠️ ما بتتقبل الصورة لو معمول ليها سكان، لازم تتطبع من الجواز نفسه.</p></div></details><details class="acc faq rv" data-rv="1" style="--d: 120ms;"><summary><span>متطلبات الإقامة بإضافة الوالدين</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>أصل الجواز</li><li>شهادة قيد</li><li>إفادة سكن للمجموعة من السفارة (مجاني)</li><li>إثبات عزوبية من السفارة</li><li>شهادة ميلاد (موثقة من الخارجية السودانية ثم السفارة السودانية ثم الخارجية المصرية) أو رقم وطني موثق من السفارة السودانية ثم الخارجية المصرية</li><li>إيصال عملة بمبلغ ٤ أو ٥ دولار</li></ul></div></details><details class="acc faq rv" data-rv="1" style="--d: 180ms;"><summary><span>الصور (إقامة الوالدين)</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>صورة من الجواز</li><li>صورة من التأشيرة أو ختم نقل بيانات الوصول</li><li>صورة من آخر تاريخ وصول</li><li>صورة فوتوغرافية</li><li>صورة من شهادة قيد</li><li>صورة من إيصال ال٥ دولار</li><li>صورة من آخر إقامة</li><li>صورة من التأشيرة</li><li>صورة من شهادة الميلاد أو الرقم الوطني</li></ul></div></details><details class="acc faq rv" data-rv="1" style="--d: 240ms;"><summary><span>الأوراق المطلوبة للوالدين</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>أصل الجواز</li><li>إيصال عملة</li><li>صورة من الجواز</li><li>صورة من التأشيرة أو ختم نقل بيانات الوصول</li><li>صورة من آخر تاريخ وصول</li><li>صورة من شهادة قيدك</li><li>صورة من إيصال العملة</li><li>صورة من إفادة السكن</li><li>صورة من آخر إقامة</li><li>صورة من شهادة الميلاد أو الرقم الوطني الموثقين (تضاف إلى ملف الوالدة)</li><li>صورة فوتوغرافية</li></ul></div></details><details class="acc faq rv" data-rv="1" style="--d: 0ms;"><summary><span>رسوم التوثيق</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>765ج إثبات العزوبية</li><li>765ج شهادة الميلاد أو الرقم الوطني</li><li>130ج فيزا توثيق الخارجية المصرية بالإسماعيلية</li></ul><div class="faqimgs"><figure><img loading="lazy" src="assets/img/faq/stamps.webp" alt="الأسود: أختام السفارة
+الأحمر: أختام الخارجية المصرية"><figcaption>الأسود: أختام السفارة
+الأحمر: أختام الخارجية المصرية</figcaption></figure></div></div></details><details class="acc faq rv" data-rv="1" style="--d: 60ms;"><summary><span>إقامة السويس</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>تلاتة صور من الجواز (ورقة كاملة)</li><li>صورتين من ختم الدخول</li><li>صورتين من إقامة إسماعيلية</li><li>صورة فوتوغرافية واحدة</li><li>إيصال من بنك مصر 20 دولار</li><li>وهناك بندفع 770 جنيه مصري</li></ul></div></details><details class="acc faq rv" data-rv="1" style="--d: 120ms;"><summary><span>مواعيد المواصلات (سوبر جيت)</span><span class="ic">›</span></summary><div class="in"><ul class="faqlist"><li>سوبر جيت — مواعيد الرحلات من القاهرة:</li><li>٦:٣٠</li><li>٧:٣٠</li><li>٨:٣٠</li><li>٩:٣٠</li><li>٢:٣٠</li><li>٤:٠٠</li><li>٥:٣٠</li></ul></div></details></div>
+ </section>
+
+ <section id="page-register" class="page" hidden="">
+  <div class="page-hero"><div class="wrap">
+   <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-register" xlink:href="#i-register"></use></svg></span><p class="eyebrow2" id="r-eyebrow">انضم لينا</p>
+   <h1 data-t="nav.register">تسجيل الطلبة</h1><p id="r-text">سجّل بياناتك عشان تنضم لقاعدة بيانات الرابطة وتوصلك التحديثات المهمة.</p>
+  </div></div>
+  <div class="backbtn"><div class="wrap"><button data-go="home">→ <span data-t="back">رجوع</span></button></div></div>
+  <div class="page-body wrap" style="max-width:560px">
+   <div class="seg">
+    <button type="button" id="segNew" class="on" data-t="register.tabNew">تسجيل طالب جديد</button>
+    <button type="button" id="segLogin" data-t="register.tabLogin">تسجيل الدخول</button>
+   </div>
+   <form id="formNew">
+    <div><label data-t="f.name">الاسم رباعي</label><input required="" id="fName"></div>
+    <div><label data-t="f.college">الكلية / المعهد</label><select id="fCollege" required=""><option value="">— اختر —</option><option>الطب</option><option>طب الأسنان</option><option>الصيدلة</option><option>الهندسة</option><option>التجارة</option><option>الحاسبات والمعلومات</option><option>العلوم</option><option>الآداب</option><option>التربية</option><option>أخرى</option></select></div>
+    <div><label data-t="f.year">السنة الدراسية</label><select id="fYear" required=""><option value="">— اختر —</option><option>السنة الأولى</option><option>السنة الثانية</option><option>السنة الثالثة</option><option>السنة الرابعة</option><option>السنة الخامسة</option><option>السنة السادسة</option></select></div>
+    <div><label data-t="f.phone">رقم الهاتف الشخصي</label><input required="" id="fPhone" placeholder="01XXXXXXXXX"></div>
+    <div><label data-t="f.whatsapp">رقم الواتساب</label><input required="" id="fWa" placeholder="01XXXXXXXXX"></div>
+    <div><label data-t="f.emergency">رقم إضافي لطالب / زميل (للطوارئ)</label><input required="" id="fEm" placeholder="01XXXXXXXXX"></div>
+    <div><label data-t="f.email">البريد الإلكتروني</label><input required="" type="email" id="fEmail"></div>
+    <div><label data-t="f.password">كلمة المرور</label><input required="" type="password" id="fPass"></div>
+    <button class="submit" type="submit" data-t="f.submit">تسجيل</button>
+    <p class="note" data-t="f.note">هذا النموذج تجريبي حالياً ويُخزَّن محلياً على جهازك فقط.</p>
+   </form>
+   <form id="formLogin" style="display: none;">
+    <div><label data-t="f.email">البريد الإلكتروني</label><input required="" type="email" id="lEmail"></div>
+    <div><label data-t="f.password">كلمة المرور</label><input required="" type="password" id="lPass"></div>
+    <button class="submit" type="submit" data-t="f.login">دخول</button>
+    <p class="note" data-t="f.note">هذا النموذج تجريبي حالياً ويُخزَّن محلياً على جهازك فقط.</p>
+   </form>
+  </div>
+ </section>
+
+</main>
+<footer><span class="foot-logo" role="img" aria-label="SSU"></span><span id="footerText">© 2026 SSU — رابطة الطلاب السودانيين، جامعة قناة السويس</span></footer>
+
+<div id="search" hidden=""><div class="swrap">
+ <div class="sbar"><span>🔍</span><input id="sq" type="search" autocomplete="off" enterkeyhint="search"><button id="sclose" aria-label="Close">✕</button></div>
+ <div id="sres"></div>
+</div></div>
+<script src="js/data.js" defer></script>
+<script src="js/app.js" defer></script>
+
+
+</body></html>
